@@ -34,15 +34,18 @@ def evaluate(test_df, val_df=None, budgets=BUDGETS):
     }
     ref = val_df[val_df["label"] == 0]["score"] if val_df is not None else \
           test_df[test_df["label"] == 0]["score"]
+    attacks = test_df[test_df["label"] == 1]
+
     for b in budgets:
         thr = threshold_at_fpr(ref, b)
         tpr, fpr = tpr_at_threshold(test_df, thr)
         out[f"tpr@fpr{b}"] = tpr
         out[f"real_fpr@{b}"] = fpr
-    # per attack type at the 1% budget
+        # macro: average of per-attack-type TPRs, so a dominant class cannot hide the rest
+        out[f"macro_tpr@fpr{b}"] = float(np.mean(
+            [(g["score"] > thr).mean() for _, g in attacks.groupby("attack_type")]))
+
     thr = threshold_at_fpr(ref, 0.01)
-    per = {}
-    for t, g in test_df[test_df["label"] == 1].groupby("attack_type"):
-        per[t] = float((g["score"] > thr).mean())
-    out["per_attack_tpr@fpr0.01"] = per
+    out["per_attack_tpr@fpr0.01"] = {
+        t: float((g["score"] > thr).mean()) for t, g in attacks.groupby("attack_type")}
     return out
