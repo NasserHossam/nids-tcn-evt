@@ -1,0 +1,25 @@
+model,threshold,split,fpr,tpr,macro_tpr
+M1 IsolationForest,percentile 99,tune,0.011,0.005,0.02
+M1 IsolationForest,percentile 99,test,0.073,0.1,0.085
+M1 IsolationForest,mean + 3 std,tune,0.02,0.016,0.085
+M1 IsolationForest,mean + 3 std,test,0.156,0.244,0.193
+M1 IsolationForest,MAD (k=3.5),tune,0.166,0.125,0.868
+M1 IsolationForest,MAD (k=3.5),test,0.946,0.889,0.922
+M2 OneClassSVM,percentile 99,tune,0.015,0.004,0.024
+M2 OneClassSVM,percentile 99,test,0.422,0.281,0.321
+M2 OneClassSVM,mean + 3 std,tune,0.038,0.036,0.475
+M2 OneClassSVM,mean + 3 std,test,0.638,0.541,0.579
+M2 OneClassSVM,MAD (k=3.5),tune,0.106,0.594,0.897
+M2 OneClassSVM,MAD (k=3.5),test,0.849,0.868,0.896
+M3 AE v1,percentile 99,tune,0.013,0.018,0.058
+M3 AE v1,percentile 99,test,0.269,0.236,0.37
+M3 AE v1,mean + 3 std,tune,0.001,0.001,0.006
+M3 AE v1,mean + 3 std,test,0.108,0.075,0.078
+M3 AE v1,MAD (k=3.5),tune,0.238,1.0,1.0
+M3 AE v1,MAD (k=3.5),test,0.955,0.999,0.999
+M3 AE v2,percentile 99,tune,0.013,0.007,0.063
+M3 AE v2,percentile 99,test,0.536,0.242,0.378
+M3 AE v2,mean + 3 std,tune,0.004,0.001,0.009
+M3 AE v2,mean + 3 std,test,0.309,0.137,0.231
+M3 AE v2,MAD (k=3.5),tune,0.189,0.992,0.999
+M3 AE v2,MAD (k=3.5),test,0.952,0.986,0.99
