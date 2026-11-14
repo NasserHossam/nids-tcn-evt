@@ -1,0 +1,5 @@
+nids-env/
+data/
+__pycache__/
+.ipynb_checkpoints/
+*.parquet
