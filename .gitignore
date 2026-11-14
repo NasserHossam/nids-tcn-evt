@@ -1,5 +1,13 @@
+# Python environment and caches
 nids-env/
-data/
 __pycache__/
+.pytest_cache/
 .ipynb_checkpoints/
+
+# Raw and processed data (never commit datasets)
+data/
+
+# Generated files
 *.parquet
+*.joblib
+results/scores/
