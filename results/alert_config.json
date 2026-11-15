@@ -1,0 +1,6 @@
+{
+  "budget": 0.05,
+  "threshold": 0.005736944265663624,
+  "model": "autoencoder-v2",
+  "calibrated_on": "ToN-IoT benign validation split"
+}
