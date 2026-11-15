@@ -1,0 +1,4 @@
+model,auroc,tpr@1%,real_fpr@1%,macro_tpr@5%,real_fpr@5%,oracle_macro_tpr@5%
+M3 v2 (flow level),0.359,0.58,0.769,1.0,1.0,0.015
+M3 v2 max (window level),0.236,0.328,0.821,0.973,1.0,0.139
+M4 TCN (window level),0.392,0.494,0.699,0.94,0.859,0.048
