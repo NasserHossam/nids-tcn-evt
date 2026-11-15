@@ -1,0 +1,25 @@
+model,target_fpr,method,split,real_fpr,tpr,macro_tpr
+M3 AE v2 (max),0.01,EVT,tune,0.008,0.0176,0.0384
+M3 AE v2 (max),0.01,EVT,test,0.2688,0.0889,0.204
+M3 AE v2 (max),0.01,percentile,tune,0.008,0.0176,0.0384
+M3 AE v2 (max),0.01,percentile,test,0.2693,0.089,0.2041
+M3 AE v2 (max),0.001,EVT,tune,0.0006,0.0023,0.0047
+M3 AE v2 (max),0.001,EVT,test,0.0185,0.0047,0.0283
+M3 AE v2 (max),0.001,percentile,tune,0.0005,0.0022,0.0045
+M3 AE v2 (max),0.001,percentile,test,0.0165,0.0045,0.0271
+M4 TCN,0.01,EVT,tune,0.0509,0.1388,0.2825
+M4 TCN,0.01,EVT,test,0.3814,0.4041,0.3717
+M4 TCN,0.01,percentile,tune,0.0501,0.1366,0.2792
+M4 TCN,0.01,percentile,test,0.3781,0.3994,0.3655
+M4 TCN,0.001,EVT,tune,0.0013,0.0126,0.0458
+M4 TCN,0.001,EVT,test,0.2648,0.1796,0.16
+M4 TCN,0.001,percentile,tune,0.0018,0.0139,0.0503
+M4 TCN,0.001,percentile,test,0.2665,0.1888,0.1686
+M4 + M3v2 (max),0.01,EVT,tune,0.0082,0.026,0.0725
+M4 + M3v2 (max),0.01,EVT,test,0.4675,0.2287,0.3324
+M4 + M3v2 (max),0.01,percentile,tune,0.0085,0.027,0.0753
+M4 + M3v2 (max),0.01,percentile,test,0.4782,0.2376,0.3429
+M4 + M3v2 (max),0.001,EVT,tune,0.0006,0.0022,0.0045
+M4 + M3v2 (max),0.001,EVT,test,0.019,0.0046,0.0279
+M4 + M3v2 (max),0.001,percentile,tune,0.0005,0.002,0.0043
+M4 + M3v2 (max),0.001,percentile,test,0.0161,0.0044,0.0267
