@@ -11,3 +11,4 @@ data/
 *.parquet
 *.joblib
 results/scores/
+results/alerts_demo.jsonl
