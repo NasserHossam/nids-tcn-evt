@@ -127,3 +127,11 @@ Notes:
 ## Scope changes
 
 M5 contrastive encoder, the Transformer variant, TLS/JA4 features, evasion experiments and SPOT/DSPOT streaming were cut to keep the core finishable.
+
+## Running the demo
+
+1. Run notebooks 03, 05 and 11 once (they create the scalers and model weights), or `17_cross_dataset` cell 1 to retrain the autoencoder weights.
+2. Open `notebooks/19_alert_demo.ipynb`, restart the kernel and click **Run All**.
+3. The notebook calibrates the threshold on benign validation flows, replays 50,000 labelled flows in batches, prints the alert counts and one JSON alert, and shows the alert rate at several budgets.
+
+The demo uses the tune split on purpose: the threshold holds there, and it does not hold on the later test split (see Limitations).
