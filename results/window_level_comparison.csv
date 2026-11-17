@@ -1,0 +1,19 @@
+model,split,auroc,macro_tpr@5%,real_fpr@5%,oracle_macro_tpr@5%
+M1 IsolationForest (mean),tune,0.885,0.221,0.047,0.223
+M1 IsolationForest (mean),test,0.597,0.616,0.469,0.117
+M1 IsolationForest (max),tune,0.654,0.468,0.071,0.356
+M1 IsolationForest (max),test,0.547,0.545,0.387,0.009
+M2 OneClassSVM (mean),tune,0.915,0.407,0.04,0.476
+M2 OneClassSVM (mean),test,0.358,0.744,0.854,0.019
+M2 OneClassSVM (max),tune,0.794,0.211,0.049,0.223
+M2 OneClassSVM (max),test,0.338,0.37,0.517,0.034
+M3 AE v1 (mean),tune,0.91,0.387,0.051,0.377
+M3 AE v1 (mean),test,0.378,0.862,0.884,0.056
+M3 AE v1 (max),tune,0.841,0.271,0.05,0.271
+M3 AE v1 (max),test,0.342,0.468,0.63,0.021
+M3 AE v2 (mean),tune,0.958,0.583,0.049,0.598
+M3 AE v2 (mean),test,0.273,0.88,0.888,0.088
+M3 AE v2 (max),tune,0.924,0.239,0.04,0.357
+M3 AE v2 (max),test,0.228,0.431,0.814,0.036
+M4 TCN,tune,0.571,0.58,0.106,0.279
+M4 TCN,test,0.48,0.687,0.708,0.002
