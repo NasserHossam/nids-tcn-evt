@@ -6,7 +6,7 @@ Models: Isolation Forest, One-Class SVM, dense autoencoder, TCN masked autoencod
 Thresholds: percentile, mean + k·std, MAD, and extreme-value (EVT) thresholds.
 Data: NF-ToN-IoT-v2 (main) and NF-UNSW-NB15-v2 (cross-dataset test). The data is **not** in this repository.
 
-The full write-up (methods, results, limitations) is in the project report.
+The full write-up (methods, results, limitations) is in the [project report](report/NIDS-TCN-EVT-Report-7adff295.docx).
 
 ## Main findings
 
